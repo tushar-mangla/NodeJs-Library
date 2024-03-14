@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "ca5562e0-9b7b-444f-bc0c-7e1fd74e77cb",
+		"_postman_id": "d22c2efa-b450-4aa5-89c7-4b0b6e748cce",
 		"name": "assign",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "32821745"
+		"_exporter_id": "32866580",
+		"_collection_link": "https://red-water-268529.postman.co/workspace/New-Team-Workspace~97df63c5-d06d-4cbf-b8a6-2872a8603478/collection/32866580-d22c2efa-b450-4aa5-89c7-4b0b6e748cce?action=share&source=collection_link&creator=32866580"
 	},
 	"item": [
 		{
@@ -32,7 +33,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "add book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book\":\"Book-5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/library/add-book",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"add-book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-C+9MHzr7ugc879eARNwKCIwFACM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:07:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Book added successfully"
+				}
+			]
 		},
 		{
 			"name": "delete book",
@@ -60,7 +124,132 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "delete book",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book\":\"Book-6\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/library/remove-book",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"remove-book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19-obMn/Hbk5XjLLB3LLDOYqsv8rz8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:12:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Book removed successfully"
+				},
+				{
+					"name": "delete book",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book\":\"Book-6\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/library/remove-book",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"remove-book"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-9K7Ys+5Z9m3qczPTmMk82VGBL7g\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:12:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Book not found\"\n}"
+				}
+			]
 		},
 		{
 			"name": "list books",
@@ -79,7 +268,61 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "list books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/library/get-book-list",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"get-book-list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-Cv1Dq8u7xgr77ylNtL9rUy9p1q4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:08:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Book-5\nBook-6\nBook-7\n"
+				}
+			]
 		},
 		{
 			"name": "update book",
@@ -107,7 +350,194 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "update book",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"original_book\":\"Book-5\",\n    \"new_book\":\"Book-55\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/library/update-book",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"update-book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-vsIcvc1SilMZZPnMjTngcYPgi80\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:08:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Book name updated successfully"
+				},
+				{
+					"name": "update book",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"original_book\":\"Book-5\",\n    \"new_book\":\"Book-55\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/library/update-book",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"update-book"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-9K7Ys+5Z9m3qczPTmMk82VGBL7g\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:09:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Book not found\"\n}"
+				},
+				{
+					"name": "update book",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"original_book\":\"Book-6\",\n    \"new_book\":\"Book-7\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/library/update-book",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"update-book"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23-nBB6uhCxnE0yBSnGCDjbojhf/NM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:09:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"New name already exists\"\n}"
+				}
+			]
 		},
 		{
 			"name": " save-to-database",
@@ -135,7 +565,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": " save-to-database",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book\":\"Book-1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/library/save-to-database",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"library",
+								"save-to-database"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23-+x3LCN6O4hWfJMVHPPpKO8v7wjY\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Mar 2024 20:10:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Book-7\": 5,\n    \"Book-55\": 5,\n    \"Book-6\": 5\n}"
+				}
+			]
 		}
 	]
 }
